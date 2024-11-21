@@ -33,8 +33,3 @@ jobs:
         with:
           name: AlvNukkitMOT
           path: target/*.jar
-      - name: Create Release
-        uses: mikepenz/action-gh-release@v0.2.0-a03 #softprops/action-gh-release
-        with:
-          body: "Build Result"
-          files: target/*.jar
