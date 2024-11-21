@@ -1,9 +1,21 @@
 package cn.nukkit.block;
 
 import cn.nukkit.item.ItemTool;
+import cn.nukkit.item.Item;
+import cn.nukkit.Player;
 import cn.nukkit.utils.BlockColor;
 
 public class BlockFletchingTable extends BlockSolid {
+
+    @Override
+    public boolean canBeActivated() {
+        return true;
+    }
+
+    @Override
+    public void onActivate(Item item, Player player) {
+        player.sendMessage("Yeahh");
+    }
 
     @Override
     public String getName() {
