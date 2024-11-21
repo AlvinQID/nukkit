@@ -13,8 +13,10 @@ public class BlockFletchingTable extends BlockSolid {
     }
 
     @Override
-    public void onActivate(Item item, Player player) {
+    public boolean onActivate(Item item, Player player) {
         player.sendMessage("Yeahh");
+
+        return true;
     }
 
     @Override
